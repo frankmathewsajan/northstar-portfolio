@@ -1,0 +1,11 @@
+{
+  "name": "northstar-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter northstar-frontend dev",
+    "dev:backend": "pnpm --filter northstar-backend dev",
+    "dev:frontend": "pnpm --filter northstar-frontend dev",
+    "build": "pnpm --filter northstar-backend build && pnpm --filter northstar-frontend build"
+  }
+}

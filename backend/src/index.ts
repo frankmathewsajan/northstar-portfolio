@@ -335,7 +335,6 @@ app.get('/api/portfolio/summary', requireAuth, async (req: Request, res: Respons
   }
 });
 
-// Explicit tenant check endpoint to demonstrate tenant isolation rejection
 app.get('/api/portfolio/tenant/:targetTenantId', requireAuth, async (req: Request, res: Response) => {
   const targetId = Number.parseInt(req.params.targetTenantId, 10);
   if (req.user!.tenantId !== targetId) {
